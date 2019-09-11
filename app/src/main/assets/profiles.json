@@ -1,0 +1,20 @@
+[
+  {
+    "url":"https://steemitimages.com/DQmYT68htcVsjuyBnXEY8tgG8jv5ooMWnRCZgz3xBpqJE31/dims.jpeg",
+    "name":"Sofia",
+    "age":20,
+    "location":"New York"
+  },
+  {
+    "url":"https://images.pexels.com/photos/460237/pexels-photo-460237.jpeg",
+    "name":"Roma",
+    "age":22,
+    "location":"California"
+  },
+  {
+    "url":"https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg",
+    "name":"Zoya",
+    "age":23,
+    "location":"Atlantic City"
+  }
+]
