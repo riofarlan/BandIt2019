@@ -84,7 +84,7 @@
 
     </LinearLayout>
 
-    <androidx.viewpager.widget.ViewPager
+    <lab.rf.com.band_it.view.custom.CustomViewPager
         android:id="@+id/pager"
         android:layout_width="match_parent"
         android:layout_height="fill_parent"

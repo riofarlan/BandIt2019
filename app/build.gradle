@@ -22,6 +22,13 @@ android {
             res.srcDirs = ['src/main/res', 'src/main/res/drawable']
         }
     }
+    dataBinding {
+        enabled true
+    }
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
 }
 
 dependencies {
@@ -49,4 +56,8 @@ dependencies {
     implementation 'com.mikhaellopez:circularimageview:3.2.0'          // circle image view
     implementation 'com.google.android:flexbox:0.3.2'                  // google flexible box
     implementation 'com.mindorks:placeholderview:0.7.1'
+
+    //Tinder swipe layout
+    implementation "com.yuyakaido.android:card-stack-view:$swipeVersion"
+
 }

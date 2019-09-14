@@ -11,11 +11,12 @@ import lab.rf.com.band_it.activity.player.PlayerMusicGenreImage;
 import lab.rf.com.band_it.activity.profile.ProfilePurple;
 import lab.rf.com.band_it.activity.timeline.TimelineFeed;
 import lab.rf.com.band_it.tinderexample.TinderActivity;
+import lab.rf.com.band_it.view.home.HomeFragment;
 
 public class PagerAdapter extends FragmentStatePagerAdapter {
     int mNumOfTabs;
 //    TimelineFeed tab1;
-    TinderActivity tab1;
+    HomeFragment tab1;
     BottomSheetFull tab2;
     GridTwoLine tab3;
     PlayerMusicGenreImage tab4;
@@ -25,7 +26,7 @@ public class PagerAdapter extends FragmentStatePagerAdapter {
         super(fm);
         this.mNumOfTabs = NumOfTabs;
 //        tab1 = new TimelineFeed();
-        tab1 = new TinderActivity();
+        tab1 = new HomeFragment();
         tab2 = new BottomSheetFull();
         tab3 = new GridTwoLine();
         tab4 = new PlayerMusicGenreImage();

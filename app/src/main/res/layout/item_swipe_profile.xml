@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+
+    <data>
+        <variable
+            name="people"
+            type="lab.rf.com.band_it.model.People" />
+
+        <variable
+            name="itemClickListener"
+            type="android.view.View.OnClickListener" />
+
+    </data>
+
+
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/selectableItemBackground"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardUseCompatPadding="true"
+        app:cardPreventCornerOverlap="false"
+        app:cardCornerRadius="8dp"
+        app:cardBackgroundColor="@android:color/white"
+        android:onClick="@{itemClickListener}"
+        android:layout_marginTop="@dimen/actionBarSize">
+
+        <ImageView
+            android:id="@+id/item_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@{people.imageDrw}"
+            />
+    </androidx.cardview.widget.CardView>
+</layout>

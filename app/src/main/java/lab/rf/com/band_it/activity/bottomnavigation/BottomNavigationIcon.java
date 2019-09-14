@@ -25,6 +25,7 @@ import androidx.core.widget.NestedScrollView;
 import lab.rf.com.band_it.adapter.PagerAdapter;
 import lab.rf.com.band_it.utils.Tools;
 import lab.rf.com.band_it.utils.ViewAnimation;
+import lab.rf.com.band_it.view.custom.CustomViewPager;
 
 public class BottomNavigationIcon extends AppCompatActivity {
 
@@ -60,19 +61,19 @@ public class BottomNavigationIcon extends AppCompatActivity {
         tab_layout.getTabAt(4).getIcon().setColorFilter(getResources().getColor(R.color.grey_60), PorterDuff.Mode.SRC_IN);
 
 
-        final ViewPager viewPager = findViewById(R.id.pager);
+        final CustomViewPager viewPager = findViewById(R.id.pager);
         adapter = new lab.rf.com.band_it.adapter.PagerAdapter(getSupportFragmentManager(), tab_layout.getTabCount());
         viewPager.setAdapter(adapter);
         viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tab_layout));
-
-        viewPager.setOnTouchListener(new View.OnTouchListener()
-        {
-            @Override
-            public boolean onTouch(View v, MotionEvent event)
-            {
-                return true;
-            }
-        });
+//
+//        viewPager.setOnTouchListener(new View.OnTouchListener()
+//        {
+//            @Override
+//            public boolean onTouch(View v, MotionEvent event)
+//            {
+//                return true;
+//            }
+//        });
 
         tab_layout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
