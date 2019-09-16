@@ -35,6 +35,7 @@
                 app:cardPreventCornerOverlap="false"
                 app:cardCornerRadius="8dp"
                 app:cardBackgroundColor="@android:color/white"
+                app:cardElevation="0dp"
                 android:onClick="@{itemClickListener}"
                 android:layout_marginTop="@dimen/actionBarSize">
 
@@ -45,6 +46,34 @@
                     android:scaleType="centerCrop"
                     android:src="@{people.imageDrw}"
                     />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                app:cardBackgroundColor="@android:color/white"
+                android:layout_alignBottom="@id/card_image"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@{people.name}"
+                        android:layout_margin="10dp"
+                        app:textAllCaps="true"
+                        style="@style/TextAppearance.AppCompat.Title"
+                        />
+
+
+                </RelativeLayout>
+
             </androidx.cardview.widget.CardView>
 
         </RelativeLayout>
